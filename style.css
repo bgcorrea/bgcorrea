@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 68%;
 }
 
 body {
@@ -24,14 +24,14 @@ main {
   display: flex;
   width: 100vw;
   height: 100vh;
-  align-items: center;
+  align-items:center;
   justify-content: center;
   background-color: rgb(208, 173, 231);
 }
 
 .card-container {
   width: 350px;
-  height: 480px;
+  height: 500px;
   display: inline-block;
   position: relative;
   background-color: white;
