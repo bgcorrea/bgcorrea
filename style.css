@@ -1,60 +1,188 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-:root {
-  --size: 120px;
-  --font-size: 4rem;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  box-sizing: border-box;
-  --background: #252839;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------------------------------------------------ */
+
+main {
   display: flex;
-  justify-content: center;
+  width: 100vw;
+  height: 100vh;
   align-items: center;
-  min-height: 100vh;
-  background: var(--background);
-  font-family: "Poppins", sans-serif;
-}
-
-.name {
-  position: relative;
-  display: flex;
-}
-
-.name .cosmic {
-  position: relative;
-  cursor: pointer;
-  height: var(--size);
-  display: flex;
   justify-content: center;
-  align-items: center;
-}
-.name .cosmic span {
-  font-size: var(--font-size);
-  font-weight: 700;
-  -webkit-text-stroke: 2px var(--color);
-  color: transparent;
-  transition: 0.5s;
-}
-.name .cosmic:hover span {
-  opacity: 0;
+  background-color: rgb(208, 173, 231);
 }
 
-.name .cosmic::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  font-size: var(--font-size);
-  height: 0;
-  font-weight: 700;
-  overflow: hidden;
-  transition: 0.6s ease-in-out;
+.card-container {
+  width: 350px;
+  height: 480px;
+  display: inline-block;
+  position: relative;
+  background-color: white;
   text-align: center;
-  line-height: var(--size);
-  color: var(--color);
+  overflow: hidden;
+  border-radius: 20px;
+  border: 5px solid white;
+  box-shadow: 5px 10px 50px #0d007e65;
 }
-.name .cosmic:hover::before {
-  height: 100%;
-  filter: drop-shadow(0 0 2rem var(--color));
+
+.img-background {
+  display: inline-block;
+  width: 100%;
+  height: 160px;
+  background: url("https://s3.amazonaws.com/iexplore_web/images/assets/000/006/572/original/space_travel.jpg?1443785354https://a.travel-assets.com/findyours-php/viewfinder/images/res70/121000/121096-Torres-Del-Paine.jpg") center/cover no-repeat;
+  z-index: 10;
+}
+
+.card-img-profile {
+  display: inline-block;
+  position: absolute;
+  top: 90px;
+  left: 104px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid white;
+  z-index: 20;
+  background: url("/image.jpg") center/cover no-repeat;
+}
+
+/* ------------------------------------------------------ */
+
+.card_profile {
+  display: flex;
+  width: 100%;
+  margin: 45px auto 20px;
+  flex-direction: column;
+}
+
+.card_profile h1 {
+  width: 100%;
+  margin: 11px auto 7px;
+  font-size: 2.1rem;
+  font-weight:700;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.65);
+  color: black;
+}
+
+.card_profile p {
+  padding: 0 30px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ------------------------------------------------------ */
+.rrss {
+  display: flex;
+  width: 100%;
+  height: 10px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  margin-top: 1px;
+  font-size: 1.2rem;
+}
+
+.rrss img {
+  width: 15px;
+}
+
+.twitch {
+  display: grid;
+  grid-template-columns: 1px 85px;
+}
+
+.twitter {
+  display: grid;
+  grid-template-columns: 5px 85px;
+}
+
+.instagram {
+  display: grid;
+  grid-template-columns: 10px 85px;
+}
+
+/* ------------------------------------------------------ */
+
+
+.card_information {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  margin-top: 35px;
+  font-size: 1.2rem;
+}
+
+.country {
+  display: grid;
+  grid-template-columns: 20px 60px;
+}
+
+
+.card_information img {
+  width: 15px;
+}
+
+.mail {
+  display: grid;
+  grid-template-columns: 20px 85px;
+}
+
+/* ------------------------------------------------------ */
+
+.Follow {
+  display: grid;
+  grid-template-columns: 60px 60px;
+  justify-content: space-evenly;
+  background-color: rgb(214, 214, 214);
+  color: black;
+  border-top: 2px solid rgba(248, 248, 248, 0.876);
+}
+
+span {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.followers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.following {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* ------------------------------------------------------ */
+
+.button {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  padding-top: 13px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.9rem;
+  background-color: purple;
+  color: white;
 }
