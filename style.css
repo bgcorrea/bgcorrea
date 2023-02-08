@@ -31,7 +31,7 @@ main {
 
 .card-container {
   width: 350px;
-  height: 500px;
+  height: 550px;
   display: inline-block;
   position: relative;
   background-color: white;
@@ -39,7 +39,7 @@ main {
   overflow: hidden;
   border-radius: 20px;
   border: 5px solid white;
-  box-shadow: 5px 10px 50px #0d007e65;
+  box-shadow: 5px 10px 20px #0d007e65;
 }
 
 .img-background {
@@ -144,7 +144,56 @@ main {
 
 .mail {
   display: grid;
-  grid-template-columns: 20px 85px;
+  grid-template-columns: 20px 100px;
+}
+
+.enviar {
+  display: grid;
+  width: 100%;
+  height: 50px;
+  border-bottom: 0.1px;
+  border-radius: 8px;
+  padding: 0px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  font-size: 1.2rem;
+  ;
+
+}
+
+.enviar input {
+  display: flex;
+  width: 280px;
+  height: 45px;
+  margin-top: 0px;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  background-color: white;
+  border-style:solid ;
+  margin-left: 0px;
+  border-color: purple;
+  border-radius: 0px 0px 0px 8px;
+  
+}
+
+.enviar .button {
+  display: flex;
+  width: 60px;
+  height: 45px;
+  margin-top: 0px;
+  font-size: 1rem;
+  margin-left: 0px;
+  box-shadow: 10px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: purple;
+  color: white;
+  font-weight:bold;
+  border-radius: 0px 0px 8px 0px;
 }
 
 /* ------------------------------------------------------ */
