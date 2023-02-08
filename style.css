@@ -31,7 +31,7 @@ main {
 
 .card-container {
   width: 350px;
-  height: 600px;
+  height: 1000px;
   display: inline-block;
   position: relative;
   background-color: white;
