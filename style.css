@@ -244,3 +244,49 @@ span {
   color: purple;
   width: 100%;
 }
+
+/* Añade estos estilos al final de tu archivo style.css */
+
+.formulario {
+  margin-top: 20px;
+}
+
+.formulario h2 {
+  margin-bottom: 10px;
+  color: purple;
+}
+
+#formularioParticipacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+#formularioParticipacion label {
+  margin-top: 10px;
+}
+
+#formularioParticipacion input,
+#formularioParticipacion select,
+#formularioParticipacion textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#formularioParticipacion button {
+  width: 100%;
+  padding: 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#formularioParticipacion button:hover {
+  background-color: #8b5eaf; /* Puedes ajustar este color al hover */
+}

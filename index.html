@@ -15,6 +15,54 @@
 
 <body>
   <main>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Formulario</title>
+    </head>
+    <body>
+    
+    <div class="container mt-5">
+        <h2>Formulario de Participación</h2>
+        <form id="formularioParticipacion" action="procesar_formulario.php" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" class="form-control" id="correo" name="correo" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="pais">País:</label>
+                <input type="text" class="form-control" id="pais" name="pais" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="genero">Género:</label>
+                <select class="form-control" id="genero" name="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="motivo">Por qué tiene ganas de participar:</label>
+                <textarea class="form-control" id="motivo" name="motivo" rows="4" required></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
     <section class="card-container">
       <div class="img-background">
       </div>
@@ -59,7 +107,6 @@
   <script src=" /script.js"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5558728061432401"
      crossorigin="anonymous"></script>
-
 </body>
 
 </html>

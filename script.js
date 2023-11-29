@@ -21,24 +21,23 @@ function btnOnClick(){
 }
 
 
-
-// h1.innerHTML = "Benjamín Correa Peñaloza";
-
-// h1.getAttribute = "patito"
-// h1.setAttribute = ("class", "rojo")
-// h1.classList.add = ("rojo")
-// h1.classList.remove = ("rojo")
-//toggle y contains
-
-//const img = document.createElement("span")
-//img.setAttribute("src", "https://www.ngenespanol.com/wp-content/uploads/2023/01/puma-el-animal-de-la-fuerza-y-vitalidad-de-los-pueblos-prehispanicos.jpg")
-//console.log(img)
-
-// const email = document.querySelector(".card_information .mail")
-
-// email.appendChild(img);
-
-
-//////////////////////////////////////////
-
-
+function enviarFormulario() {
+    const formulario = document.getElementById('formularioParticipacion');
+    const nombre = formulario.elements['nombre'].value;
+    const correo = formulario.elements['correo'].value;
+    const pais = formulario.elements['pais'].value;
+    const genero = formulario.elements['genero'].value;
+    const motivo = formulario.elements['motivo'].value;
+  
+    // Puedes realizar validaciones adicionales aquí
+  
+    // Envía los datos al servidor (puedes usar la técnica que prefieras, por ejemplo, fetch o XMLHttpRequest)
+    const datos = { nombre, correo, pais, genero, motivo };
+    // Aquí puedes agregar el código para enviar los datos al servidor, por ejemplo, mediante una solicitud HTTP
+  
+    // Muestra un mensaje de éxito al usuario
+    resultado.innerText = "¡Formulario enviado con éxito!";
+    // También podrías reiniciar el formulario si lo deseas
+    formulario.reset();
+  }
+  
